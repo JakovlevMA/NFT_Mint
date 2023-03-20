@@ -1,32 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
 body {
     margin: 0;
-}
-.box {
- margin-top: 50px;
-}
-.card {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px 10px 10px 10px;
-    margin: 5px 10px 5px 10px;
+    color: white;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
 }
 
-.card p {
+.box {
+    margin-top: 40px;
+    padding-top: 1px;
+}
+
+
+.line {
+    border: 1px solid #889abf;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 80px 12px 80px;
+}
+
+.line p {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    min-width: 100%;
 }
 
 .step {
-    padding: 10px 10px 10px 30px;
-    width: 45%;
+    padding: 30px 0 30px 40px;
+    width: 47%;
+
 }
 .topNav {
-    background: red;
+    background: #373e52;
+    text-decoration: none;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -34,16 +48,36 @@ body {
     padding: 0;
     z-index: 2;
     width: 100%;
-    height: 40px;
+    /*height: 40px;*/
     top: 0;
+}
+
+.item {
+    padding: 0 15px;
+    margin-left: 5px;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+    margin: 0 25px 0 25px;
+}
+
+.name:hover {
+    background: #373e52;
+
+}
+.item:hover {
+    background: black;
+
 }
 .navigations {
     display: flex;
     align-items: center;
 }
-.navigations .item {
-    margin-right: 10px;
-}
+/*.navigations .item {*/
+/*    margin-right: 10px;*/
+/*}*/
 .navigations .name {
     margin-left: 10px;
 }
@@ -51,18 +85,28 @@ body {
 .nft {
     margin: 10px 20px 20px 20px;
     border-radius: 20px;
+    border: 1px solid #889abf
 }
 
 .collect {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.info {
-    border: 1px solid black;
+.FAQ{
+    /*overflow: auto;*/
+
+}
+
+details {
+    border: 1px solid #889abf;
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
-    margin: 5px 300px 5px 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
 .button {
@@ -84,22 +128,24 @@ h2 {
     justify-content: center;
 }
 
-.text {
-    display: flex;
+
+.card {
+    height: 92vh;
+}
+summary {
+    /*display: flex;*/
     justify-content: center;
     text-align: center;
     text-decoration: underline;
 }
-.text .p {
-    text-align: center;
-}
 
-.info p {
+details > p {
     text-align: center;
     margin-top: 10px;
+    background-size: auto 100%;
 }
 
-.text:hover {
+summary:hover {
     cursor: pointer;
 }
 
@@ -113,15 +159,43 @@ h2 {
     justify-content: space-between;
 }
 
-/*.nftOfRoadMap {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
 .nftOfRoadMap{
     margin: auto;
 }
 
+.ref{
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ref1 {
+    padding-right: 10px;
+}
+.ref2 {
+    padding-left: 10px;
+}
+
+.nftOfMap {
+    border-radius: 20px;
+    width: 150px;
+    border: 1px solid #889abf
+}
+
+.phase {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 65px;
+}
+
+.FAQ-CONT {
+    height: 98vh;
+    display: grid;
+}
+
+.contents {
+
+}
 
 

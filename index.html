@@ -6,11 +6,11 @@
     <title>NFT</title>
 </head>
 <body>
-<div class="box">
+<div class="box" id="selector">
     <div class="topNav">
         <div class="navigations">
-            <div class="item name">
-        <a href="#">Odyssey</a>
+            <div class="name">
+            ODYSSEY
             </div>
             <div class="item">
         <a href="#Home">Main</a>
@@ -39,18 +39,18 @@
     </div>
 
     <a id="Home"></a>
-<div class="card start">
+<div class="line card start">
     <div>
         <h2>ODYSSEY</h2>
     <p>Space is something far and unattainable for most living creatures on this mortal earth, therefore, this collection allows you to touch the beautiful, distant and unattainable
     </p>
     </div>
     <div class="collect">
-        <img src="img/1.jpg" width="100px" class="nft" alt="картинка с космосом">
-        <img src="img/2.jpg" width="100px" class="nft" alt="картинка с космосом">
-        <img src="img/4.jpg" width="100px" class="nft" alt="картинка с космосом">
-        <img src="img/8.jpg" width="100px" class="nft" alt="картинка с космосом">
-        <img src="img/7.jpg" width="100px" class="nft" alt="картинка с космосом">
+        <img src="img/1.jpg" width="150px" class="nft" alt="картинка с космосом">
+        <img src="img/2.jpg" width="150px" class="nft" alt="картинка с космосом">
+        <img src="img/4.jpg" width="150px" class="nft" alt="картинка с космосом">
+        <img src="img/8.jpg" width="150px" class="nft" alt="картинка с космосом">
+        <img src="img/7.jpg" width="150px" class="nft" alt="картинка с космосом">
     </div>
     <div class="button">
     <button type="submit" class="BTN">Mint</button>
@@ -59,11 +59,12 @@
 </div>
 
     <a id="RoadMap"></a>
-<div class="card roadMap">
-    <h2>Road Map</h2>
+<div class="line card roadMap">
 
+<div class="phase">
+    <h2>Road Map</h2>
     <div class="StepOne">
-    <div class="card step one">
+    <div class="line step one">
         <h4>Phase 1 | Explosion</h4>
         <ul>
             <li>Create a collection.</li>
@@ -72,15 +73,15 @@
         </ul>
     </div>
         <div class="nftOfRoadMap">
-        <img src="img/7.jpg" width="100px" alt="картинка с космосом">
+        <img src="img/7.jpg" class="nftOfMap" alt="картинка с космосом">
         </div>
     </div>
 
     <div class="StepTwo">
         <div class="nftOfRoadMap">
-            <img src="img/7.jpg" width="100px" alt="картинка с космосом">
+            <img src="img/7.jpg" class="nftOfMap" alt="картинка с космосом">
         </div>
-    <div class="card step two">
+    <div class="line step two">
         <h4>Phase 2 | Evolution</h4>
         <ul>
             <li>News update.</li>
@@ -90,7 +91,7 @@
     </div>
     </div>
     <div class="StepOne">
-    <div class="card step one">
+    <div class="line step one">
         <h3>Phase 3 | Dying</h3>
         <ul>
             <li>Fixing participants.</li>
@@ -99,13 +100,16 @@
         </ul>
     </div>
         <div class="nftOfRoadMap">
-        <img src="img/7.jpg" width="100px" alt="картинка с космосом">
+        <img src="img/7.jpg" class="nftOfMap" alt="картинка с космосом">
         </div>
     </div>
 </div>
+</div>
 
 <a id="FAQ"></a>
-<div class="card FAQ">
+    <div class="FAQ-CONT">
+<div class="line FAQ">
+    <div class="contents">
     <h2>FAQ</h2>
     <details class="info">
         <summary class="text">What is NFT?</summary>
@@ -123,12 +127,23 @@
         <summary class="text">How to get the White List?</summary>
         <p>We wil announce the way to get the White List in Twitter and Discord. Please follow.</p>
     </details>
+    </div>
 </div>
-<div class="card contacts">
+<div class="line contacts">
     <h2>Contacts</h2>
+    <div class="ref">
+        <div class="ref1">
     <a href="#">Twitter</a>
+    </div>
+    <div class="ref2">
     <a href="#">Discord</a>
 </div>
+    </div>
 </div>
+</div>
+</div>
+<script src="scripts/three.min.js"></script>
+<script src="scripts/vanta.birds.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
