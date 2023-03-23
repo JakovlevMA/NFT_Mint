@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>NFT</title>
 </head>
 <body>
@@ -27,13 +29,13 @@
         </div>
         <div class="navigations">
             <div class="item">
-        <a href="#Twitter">TW</a>
+        <a href="#FAQ">TW</a>
             </div>
             <div class="item">
-        <a href="#Discord">Discord</a>
+        <a href="#FAQ">Discord</a>
             </div>
             <div class="item">
-        <a href="#Ta">TA</a>
+        <a href="#">TA</a>
             </div>
         </div>
     </div>
@@ -67,19 +69,18 @@
         </div>
     </div>
     <div class="button">
-<!--    <button type="submit" class="BTN">Mint</button>-->
-    <button type="submit" class="BTN">Connect to Metamask</button>
+    <input type="button" id="MM" class="BTN" onclick="connect()" value="Connect to Metamask">
     </div>
     </div>
 </div>
 
     <a id="RoadMap"></a>
-<div class="line card roadMap">
+<div class="line card roadMap" data-aos="fade-down">
 <div class="pos">
 <div class="phase">
     <h2>Road Map</h2>
     <div class="StepOne">
-    <div class="line step one">
+    <div class="line step one" data-aos="fade-right" data-aos-duration="2000">
         <h4>Phase 1 | Explosion</h4>
         <ul>
             <li>Create a collection.</li>
@@ -87,16 +88,16 @@
             <li>White paper preparation.</li>
         </ul>
     </div>
-        <div class="nftOfRoadMap">
+        <div class="nftOfRoadMap" data-aos="fade-left" data-aos-duration="2000">
         <img src="img/13.jpg" id="seven" class="nftOfMap" alt="картинка с космосом">
         </div>
     </div>
 
     <div class="StepTwo">
-        <div class="nftOfRoadMap">
+        <div class="nftOfRoadMap" data-aos="fade-right" data-aos-duration="2000">
             <img src="img/15.jpg" id="eight" class="nftOfMap" alt="картинка с космосом">
         </div>
-    <div class="line step two">
+    <div class="line step two" data-aos="fade-left" data-aos-duration="2000">
         <h4>Phase 2 | Evolution</h4>
         <ul>
             <li>News update.</li>
@@ -106,7 +107,7 @@
     </div>
     </div>
     <div class="StepOne">
-    <div class="line step one">
+    <div class="line step one" data-aos="fade-right" data-aos-duration="2000">
         <h3>Phase 3 | Dying</h3>
         <ul>
             <li>Fixing participants.</li>
@@ -114,7 +115,7 @@
             <li>Continuation?...</li>
         </ul>
     </div>
-        <div class="nftOfRoadMap">
+        <div class="nftOfRoadMap" data-aos="fade-left" data-aos-duration="2000">
         <img src="img/17.jpg" id="nine" class="nftOfMap" alt="картинка с космосом">
         </div>
     </div>
@@ -123,29 +124,27 @@
 </div>
 
 <a id="FAQ"></a>
-    <div class="FAQ-CONT">
-<div class="line FAQ">
-    <div class="contents">
+    <div class="FAQ-CONT" data-aos="fade-down">
+<div class="line FAQ" data-aos="fade-down">
     <h2>FAQ</h2>
-    <details class="info">
+    <details class="info" data-aos="fade-down">
         <summary class="text">What is NFT?</summary>
         <p>NFT, also a unique token, is a type of cryptographic token, each copy of which is unique and cannot be exchanged or replaced by another similar token, like bitcoin or Ethereum.</p>
     </details>
-    <details class="info">
+    <details class="info" data-aos="fade-down">
         <summary class="text">What is Odyssey NFT?</summary>
         <p>Odyssey NFT is the first series of Odyssey NFT, there is a total of 6,000 Four Odyssey NFT NFTs, using the ether chain and erc721 protocol.</p>
     </details>
-    <details class="info">
+    <details class="info" data-aos="fade-down">
         <summary class="text">What will happen after Odyssey?</summary>
         <p>You can participate in the next giveaway...</p>
     </details>
-    <details class="info">
+    <details class="info" data-aos="fade-down">
         <summary class="text">How to get the White List?</summary>
         <p>We wil announce the way to get the White List in Twitter and Discord. Please follow.</p>
     </details>
-    </div>
 </div>
-<div class="line contacts">
+<div class="line contacts" data-aos="fade-down">
     <h2>Contacts</h2>
     <div class="ref">
         <div class="ref1">
@@ -160,6 +159,8 @@
 </div>
 <script src="scripts/three.min.js"></script>
 <script src="scripts/vanta.birds.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
