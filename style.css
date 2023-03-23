@@ -197,10 +197,10 @@ summary:hover {
     margin-right: 100px;
 }
 
-.FAQ-CONT {
-    height: 92vh;
-    display: grid;
-}
+/*.FAQ-CONT {*/
+/*    height: 92vh;*/
+/*    display: grid;*/
+/*}*/
 
 .pos {
     display: flex;
