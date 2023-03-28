@@ -20,7 +20,7 @@ VANTA.BIRDS({
 })
 
 ////////////////////////////////////////////// смена картинки для каждого отдельного NFT ----------->
-let imagesOne  = ['img/1.jpg', 'img/2.jpg',]
+let imagesOne  = ['img/1.jpg', 'img/2.jpg']
 let lengthOne = imagesOne.length;
 let indexOne = 1;
 
