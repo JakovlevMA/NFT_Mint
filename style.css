@@ -43,25 +43,26 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-    margin: 0;
     position: fixed;
     padding: 0;
     z-index: 2;
-    width: 100%;
-    top: 1px;
+    left: 80px;
+    right: 80px;
+    top: 2px;
     border: 1px solid #889abf;
     border-radius: 10px;
+
 }
 
-.item {
-    padding: 0 15px;
-    margin-left: 5px;
-}
+/*.item {*/
+/*    padding: 0 15px;*/
+/*    margin-left: 5px;*/
+/*}*/
 
 .item a{
     text-decoration: none;
     color: white;
-    margin: 0 25px 0 25px;
+    margin: 0 15px 0 15px;
 }
 
 .name:hover {

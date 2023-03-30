@@ -129,11 +129,19 @@ async function connect() {
         await window.ethereum.request({ method: "eth_requestAccounts" });
         window.web3 = new Web3(window.ethereum);
         document.getElementById("MM").value = "Mint";
+    } else {
+        alert("You need to install MetaMask to use this feature. Click ok to download MetaMask");
+        window.open("https://metamask.io/download.html");
+    }
+}
 
+async function mint() {
+    const button = document.getElementById("MM");
+
+    if (button.value === "Mint") {
         const accounts = await window.ethereum.request({ method: "eth_accounts" });
         const address = "0x0ec80515C13263f7c096f1a7F3d35590f2809F8D";
         const weiValue = web3.utils.toWei("0.000001", "ether");
-
         const transactionParameters = {
             from: accounts[0],
             to: address,
@@ -145,10 +153,12 @@ async function connect() {
             console.log("Transaction successful!");
         } catch (error) {
             console.error(error);
+        } finally {
+            // сброс значений
+            button.value = 'Mint';
+            button.innerText = 'Connect';
         }
-
     } else {
-        alert("You need to install MetaMask to use this feature. Click ok to download MetaMask");
-        window.open("https://metamask.io/download.html");
+        alert(`Please click 'OK' button first to connect to Metamask.`)
     }
 }
